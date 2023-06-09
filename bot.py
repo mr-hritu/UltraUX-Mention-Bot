@@ -26,22 +26,20 @@ async def start(event):
     buttons=(
       [
         Button.url('🔥Support Group🔥', 'https://t.me/Private_Bots'),
-        Button.url('💥Owner💥', 't.me/Prime_Hritu'),
-        Button.url('♻️Commands♻️', 'https://graph.org/file/5443bd76a83ae38dbf1bf.jpg')
+        Button.url('💥Owner💥', 't.me/Prime_Hritu')
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of UltraUX Mention Bot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [UltraUX Series](t.me/ultraux_bot)"
+  helptext = "**Help Menu of Mention Bot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\n**Bot Must Be Admin In The Group To Mention All**\n\nFollow [Private Bots](t.me/Private_Bots)"
   await event.reply(
     helptext,
     link_preview=True,
     buttons=(
       [
-        Button.url('📣 Support Group', 'https://t.me/ultraux_official'),
-        Button.url('Main Bot', 't.me/ultraux_bot')
+        Button.url('📣 Support Group', 'https://t.me/private_giveawayChats')
       ]
     )
   )
@@ -51,7 +49,7 @@ async def help(event):
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond("__This command can be use in groups and channels!__")
+    return await event.respond("__This command can be use in groups and channels!__\n\n**Bot Must Be Admin In Group To Mention All**")
   
   is_admin = False
   try:
