@@ -36,7 +36,7 @@ Button.url('Add Me To Your Group', 'http://t.me/Mention_All_RoBot?startgroup=bot
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of Mention Bot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\n`Example: /all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\n\n**Bot Must Be Admin In The Group To Mention All**\n\n\nFollow [Private Bots](t.me/Private_Bots)"
+  helptext = "**Help Menu of Mention Bot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\n\n**Bot Must Be Admin In The Group To Mention All**\n\n\nFollow [Private Bots](t.me/Private_Bots)"
   await event.reply(
     helptext,
     link_preview=True,
