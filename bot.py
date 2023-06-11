@@ -25,7 +25,7 @@ async def start(event):
     link_preview=True,
     buttons=(
       [
-        Button.url('🔥Support Group🔥', 'https://t.me/Private_Bots'),
+        Button.url('🔥Support Group🔥', 'https://t.me/private_giveawayChats'),
         Button.url('💥Owner💥', 't.me/Prime_Hritu')
       ]
     )
