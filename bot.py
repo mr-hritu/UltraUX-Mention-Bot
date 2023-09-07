@@ -43,7 +43,7 @@ async def help(event):
     link_preview=True,
     buttons=(
       [
-        Button.url('📣 Support Group', 'https://t.me/private_giveawayChats')
+        Button.url('📣 Support Group', 'https://t.me/privates_chats')
       ]
     )
   )
