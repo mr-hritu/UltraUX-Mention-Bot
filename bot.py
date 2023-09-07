@@ -29,7 +29,7 @@ async def start(event):
 Button.url('Add Me To Your Group', 'http://t.me/Mention_All_RoBot?startgroup=botstart')
 ],
 [
-        Button.url('Support Group', 'https://t.me/private_giveawayChats'),
+        Button.url('Support Group', 'https://t.me/privates_chats'),
         Button.url('Developer', 't.me/Prime_Hritu')
       ]
     )
